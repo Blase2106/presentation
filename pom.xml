@@ -22,22 +22,22 @@
 	</properties>
 	
 		<distributionManagement>
-		<repository>
-			<id>release</id>
-			<name>releases</name>
-			<url>http://localhost:8082/artifactory/libs-release-local</url>
-		</repository>
-		<snapshotRepository>
-			<id>snapshot</id>
-			<name>snapshots</name>
-			<url>http://localhost:8082/artifactory/libs-snapshot-local</url>
-		</snapshotRepository>
-	</distributionManagement>
+			<repository>
+				<id>release</id>
+				<name>releases</name>
+				<url>http://localhost:8081/artifactory/mvn-libs-release-local</url>
+			</repository>
+				<snapshotRepository>
+					<id>snapshot</id>
+					<name>snapshots</name>
+				<url>http://localhost:8081/artifactory/mvn-libs-snapshot-local</url>
+				</snapshotRepository>
+		</distributionManagement>
 
 	<scm>
-		<connection>scm:git:git@github.com:Blase2106/devops.git</connection>
-		<developerConnection>scm:git:git@github.com:Blase2106/devops.git</developerConnection>
-		<url>git@github.com:Blase2106/devops.git</url>
+		<connection>scm:git:git@github.com:Blase2106/presentation.git</connection>
+		<developerConnection>scm:git:git@github.com:Blase2106/presentation.git</developerConnection>
+		<url>git@github.com:Blase2106/presentation.git</url>
 		<tag>v1.6.1</tag>
 	</scm>
 	
@@ -65,6 +65,12 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
 			<optional>true</optional>
+		</dependency>
+		<dependency>
+  			<groupId>junit</groupId>
+  			<artifactId>junit</artifactId>
+  			<version>4.11</version>
+  			<scope>test</scope>
 		</dependency>
 	</dependencies>
 
